@@ -1,3 +1,10 @@
 <h1>Salon Paws</h1>
 <h4><a href="/stylists">View Stylists</a></h4>
-<h4><a href="/clients">View Clients</a></h4>
+@if(@Model.Count == 0)
+{
+  <!-- if the count is 0 please add a stylist first -->
+}
+else
+{
+  <h4><a href="/clients">View Clients</a></h4>
+}
