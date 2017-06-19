@@ -1,6 +1,6 @@
 # Hair Salon app
 
-#### An Epicodus exercise in xUnit testing, 06.09.17
+#### An Epicodus exercise in Database Design, 06.09.17
 
 #### **By Nick Wise***
 
@@ -17,7 +17,6 @@ This web application will allow a Owner to enter, edit and delete an employed St
 | Stylist can update client to there list of clients name| update Client: "James" to Client: "Jenny" | Update "James" to "Jenny"| - Update and Patch methods allow us to update user information.
 | Stylist can delete  clients to there list of clients | delete Client: "James" to Stylist: "Jenny" | Jennys Clients : "Bob", "Jessica"| - one to many relation ship where the client has a stylist Id attached to their name so we can delete a client.
 
-## Gh-pages
 
 ## Setup/Installation Requirements
 
@@ -26,8 +25,9 @@ Click the "download or clone" button and copy the link.
 In your computers terminal type "git clone" & paste the copied link.
 Once downloaded you can open the index.html file in the browser of your choice.
 You can view the code using the text editor of your choice as well.
-
-Next, SQLCMD: > CREATE DATABASE salon; > GO > USE salon; > GO > CREATE TABLE client (id INT IDENTITY(1,1), name VARCHAR(255), stylist_id INT); > CREATE TABLE stylist (id INT IDENTITY(1,1), name VARCHAR(255)); > GO
+In PowerShell type: sqlcmd -S "(localdb)\mssqllocaldb",
+Next, type SQLCMD: > CREATE DATABASE salon; > GO > USE salon; > GO > CREATE TABLE client (id INT IDENTITY(1,1), name VARCHAR(255), stylist_id INT); > CREATE TABLE stylist (id INT IDENTITY(1,1), name VARCHAR(255)); > GO. 
+To view the page, type dnx kestrel in your powershell window to launch the local server. Next, you will need to input http://localhost:5004/ into your prefered browser to view the actual page content.   
 
 ## Known Bugs
 
