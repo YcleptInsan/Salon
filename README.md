@@ -21,13 +21,13 @@ This web application will allow a Owner to enter, edit and delete an employed St
 ## Setup/Installation Requirements
 
 https://github.com/YcleptInsan/Salon
-Click the "download or clone" button and copy the link.
-In your computers terminal type "git clone" & paste the copied link.
-Once downloaded you can open the index.html file in the browser of your choice.
-You can view the code using the text editor of your choice as well.
-In PowerShell type: sqlcmd -S "(localdb)\mssqllocaldb",
-Next, type SQLCMD: > CREATE DATABASE salon; > GO > USE salon; > GO > CREATE TABLE client (id INT IDENTITY(1,1), name VARCHAR(255), stylist_id INT); > CREATE TABLE stylist (id INT IDENTITY(1,1), name VARCHAR(255)); > GO. 
-To view the page, type dnx kestrel in your powershell window to launch the local server. Next, you will need to input http://localhost:5004/ into your prefered browser to view the actual page content.   
+1. Click the "clone" button and copy the link.
+2. In your computers terminal type "git clone" & paste the copied link.
+3. Once downloaded you can open the index.html file in the browser of your choice.
+4. You can view the code using the text editor of your choice as well.
+5. In PowerShell type: sqlcmd -S "(localdb)\mssqllocaldb",
+6. Next, type SQLCMD: > CREATE DATABASE salon; > GO > USE salon; > GO > CREATE TABLE client (id INT IDENTITY(1,1), name VARCHAR(255), stylist_id INT); > CREATE TABLE stylist (id INT IDENTITY(1,1), name VARCHAR(255)); > GO. 
+7. To view the page, you need to initialize the local server by typing dnx kestrel in your powershell window. Next, you will need to input http://localhost:5004/ into your prefered browser to view the actual page content.   
 
 ## Known Bugs
 
